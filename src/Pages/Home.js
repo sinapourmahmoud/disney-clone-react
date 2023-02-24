@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import ImageSlider from '../Components/ImageSlider'
+import HomeCards from '../Components/HomeCards'
 import backgroundIMG from './../images/home-background.png'
 const HomeBox=styled.div`
 width: 100%;
@@ -16,6 +17,7 @@ overflow-x: hidden;
     inset: 0px;
     opacity: 1;
     z-index: -1;
+    overflow-x: hidden;
   }
 `
 const Container=styled.div`
@@ -30,7 +32,7 @@ export default function Home() {
 
            <Container>
         <ImageSlider/>
-            
+            <HomeCards/>
             </Container> 
     </HomeBox>
   )
