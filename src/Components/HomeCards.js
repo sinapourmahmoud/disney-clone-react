@@ -15,10 +15,16 @@ margin-top: 6rem;
 display: grid;
 gap: 3rem;
 grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-grid-auto-rows: 8rem;
+grid-auto-rows: 12rem;
+@media screen and (min-width:576px) and (max-width:768px){
+
+  grid-auto-rows: 8rem;
+}
 @media screen and (min-width:768px){
     margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+
+    grid-auto-rows: 8rem;
 
 }
 `
