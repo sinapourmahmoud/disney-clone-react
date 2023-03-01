@@ -1,6 +1,7 @@
 import './App.css';
 import { lazy,Suspense } from 'react';
 import { Route,Routes } from 'react-router-dom';
+const Inside=  lazy(()=>import('./Pages/Inside'));
 const Login=lazy(()=> import('./Pages/Login'))
 const Header=lazy(()=> import('./Components/Header'))
 const Home=lazy(()=> import('./Pages/Home'))
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route element={<Login/>} path="/login"  />
         <Route element={<Home/>} path="/"  />
+        <Route element={<Inside/>} path="/inside/:id"  />
       </Routes>
     </Suspense>
 

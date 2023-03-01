@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 
 const CardStyled=styled.div`
@@ -38,11 +39,14 @@ transition:all 0.3s ease-in;
     }
 `
 export default function RecommendingCards({item}) {
-
-
+  const navigate=useNavigate()
+  const insertCard=()=>{
+    const id=item.id
+    navigate(`/inside/${id}`)
+  }
 
   return (
-    <CardStyled >
+    <CardStyled onClick={insertCard}>
       <img src={item.data().backgroundImg}/>
     </CardStyled>
   )
