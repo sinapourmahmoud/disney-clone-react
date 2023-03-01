@@ -40,6 +40,7 @@ gap: 2rem;
 `
 
 export default function Home() {
+  console.log('home')
   let [trending,setTrending]=useState(null)
   let [news,setNews]=useState(null)
   let [original,setOriginal]=useState(null)

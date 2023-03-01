@@ -1,6 +1,5 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import styled from "styled-components";
-
 import backImg from './../images/login-background.jpg'
 import topImage from './../images/cta-logo-one.svg'
 import topImage2 from './../images/cta-logo-two.png'
@@ -52,11 +51,12 @@ color: rgba(255,255,255,0.8);
     letter-spacing: 1px;
 `
  function Login() {
+
   return (
     <Container>
         <Wrap>
             <TopImage src={topImage} />
-            <LoginBTN>GET ALL THERE</LoginBTN>
+            <LoginBTN >GET ALL THERE</LoginBTN>
             <Description>
             al distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites 
             </Description>

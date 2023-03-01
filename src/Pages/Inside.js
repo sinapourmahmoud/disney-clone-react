@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import UseFetching from '../Components/Hooks/UseFetching'
+import UseFetching from '../Hooks/UseFetching'
 const MainDiv=styled.div`
 width: 100vw;
 height: 100vh; 
